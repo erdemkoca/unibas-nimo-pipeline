@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-10-05T17:27:36.127578",
+  "pipeline_start_time": "2025-10-05T14:56:16.503030",
+  "pipeline_end_time": "2025-10-05T17:27:35.098011",
+  "pipeline_duration_seconds": 9078.594980955124,
+  "pipeline_duration_minutes": 151.30991634925206,
+  "n_iterations": 20,
+  "rebalance_config": {
+    "mode": "undersample",
+    "target_pos": 0.5
+  },
+  "n_datasets": 4,
+  "n_results": 480,
+  "datasets": [
+    {
+      "kind": "synthetic",
+      "id": "C",
+      "path": "../data/synthetic",
+      "n_train": 1400,
+      "n_val": 600,
+      "desc": "Synthetic scenario C (auto-discovered)"
+    },
+    {
+      "kind": "synthetic",
+      "id": "D",
+      "path": "../data/synthetic",
+      "n_train": 1400,
+      "n_val": 600,
+      "desc": "Synthetic scenario D (auto-discovered)"
+    },
+    {
+      "kind": "synthetic",
+      "id": "E",
+      "path": "../data/synthetic",
+      "n_train": 1400,
+      "n_val": 600,
+      "desc": "Synthetic scenario E (auto-discovered)"
+    },
+    {
+      "kind": "synthetic",
+      "id": "F",
+      "path": "../data/synthetic",
+      "n_train": 1400,
+      "n_val": 600,
+      "desc": "Synthetic scenario F (auto-discovered)"
+    }
+  ],
+  "total_time": 9079.624245166779
+}

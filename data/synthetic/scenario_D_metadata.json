@@ -1,0 +1,85 @@
+{
+  "scenario": "D",
+  "desc": "Scenario C: linear x1=+1, x2=-2 with nonlinear interactions (tanh & sin).",
+  "p": 3,
+  "sigma": 0.1,
+  "b0": 1.0,
+  "beta_nonzero": {
+    "0": 2.0,
+    "1": -2.0
+  },
+  "nl": [
+    [
+      "main_int_tanh",
+      0,
+      1,
+      0.0,
+      4.0,
+      1.0
+    ],
+    [
+      "main_int_sin",
+      1,
+      0,
+      0.0,
+      -6.0,
+      2.0
+    ],
+    [
+      "main_int_tanh",
+      1,
+      0,
+      0.0,
+      -2.0,
+      2.0
+    ]
+  ],
+  "true_support": [
+    0,
+    1
+  ],
+  "n_full": 10000,
+  "sizes": {
+    "test_big": 5000,
+    "pool": 5000
+  },
+  "task": "classification",
+  "class_dist_full": [
+    4256,
+    5744
+  ],
+  "nl_edges": [
+    {
+      "arity": 2,
+      "type": "main_int_tanh",
+      "i": 0,
+      "j": 1,
+      "weight": 4.0,
+      "base": 0.0,
+      "scale": 1.0
+    },
+    {
+      "arity": 2,
+      "type": "main_int_sin",
+      "i": 1,
+      "j": 0,
+      "weight": -6.0,
+      "base": 0.0,
+      "scale": 2.0
+    },
+    {
+      "arity": 2,
+      "type": "main_int_tanh",
+      "i": 1,
+      "j": 0,
+      "weight": -2.0,
+      "base": 0.0,
+      "scale": 2.0
+    }
+  ],
+  "beta_linearization": [
+    1.9896452829570301,
+    -1.94746085714201,
+    -0.0722395699318213
+  ]
+}

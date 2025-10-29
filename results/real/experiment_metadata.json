@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-10-05T03:58:26.899868",
+  "pipeline_start_time": "2025-10-05T03:08:57.654839",
+  "pipeline_end_time": "2025-10-05T03:58:26.655531",
+  "pipeline_duration_seconds": 2969.0006930828094,
+  "pipeline_duration_minutes": 49.48334488471349,
+  "n_iterations": 20,
+  "rebalance_config": {
+    "mode": "undersample",
+    "target_pos": 0.5
+  },
+  "n_datasets": 4,
+  "n_results": 480,
+  "datasets": [
+    {
+      "kind": "real",
+      "id": "boston",
+      "path": "../data/real/boston/processed",
+      "n_train": 140,
+      "n_val": 60,
+      "desc": "Boston Housing (binary classification)"
+    },
+    {
+      "kind": "real",
+      "id": "housing",
+      "path": "../data/real/housing/processed",
+      "n_train": 140,
+      "n_val": 60,
+      "desc": "California Housing (binary classification)"
+    },
+    {
+      "kind": "real",
+      "id": "diabetes",
+      "path": "../data/real/diabetes/processed",
+      "n_train": 140,
+      "n_val": 60,
+      "desc": "Diabetes Progression (binary classification)"
+    },
+    {
+      "kind": "real",
+      "id": "moon",
+      "path": "../data/real/moon/processed",
+      "n_train": 140,
+      "n_val": 60,
+      "desc": "Two-Moon Dataset (binary classification)"
+    }
+  ],
+  "total_time": 2969.24498295784
+}

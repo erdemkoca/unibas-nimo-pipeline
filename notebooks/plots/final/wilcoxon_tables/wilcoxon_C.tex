@@ -1,0 +1,25 @@
+\begin{table}
+\caption{Paired Wilcoxon (two-sided) on f1 for scenario C.}
+\label{tab:wilcoxon_C}
+\begin{tabular}{lrrrll}
+\toprule
+pair & N_nonzero & median_delta_f1 & wilcoxon_p & sig & interpretation \\
+\midrule
+Lasso vs LassoNet & 30 & -0.386096 & 0.000002 & *** & Lasso < LassoNet \\
+Lasso vs NIMO_MLP & 30 & -0.239460 & 0.000002 & *** & Lasso < NIMO_MLP \\
+Lasso vs NIMO_T & 30 & -0.140446 & 0.000002 & *** & Lasso < NIMO_T \\
+Lasso vs NN & 30 & -0.350203 & 0.000002 & *** & Lasso < NN \\
+Lasso vs RF & 30 & -0.349269 & 0.000002 & *** & Lasso < RF \\
+LassoNet vs NIMO_MLP & 30 & 0.135547 & 0.000002 & *** & LassoNet > NIMO_MLP \\
+LassoNet vs NIMO_T & 30 & 0.248866 & 0.000002 & *** & LassoNet > NIMO_T \\
+LassoNet vs NN & 30 & 0.040185 & 0.000002 & *** & LassoNet > NN \\
+LassoNet vs RF & 30 & 0.040930 & 0.000002 & *** & LassoNet > RF \\
+NIMO_MLP vs NN & 30 & -0.097947 & 0.000002 & *** & NIMO_MLP < NN \\
+NIMO_MLP vs RF & 30 & -0.097525 & 0.000002 & *** & NIMO_MLP < RF \\
+NIMO_T vs NN & 30 & -0.209920 & 0.000002 & *** & NIMO_T < NN \\
+NIMO_T vs RF & 30 & -0.209501 & 0.000002 & *** & NIMO_T < RF \\
+NIMO_MLP vs NIMO_T & 30 & 0.115958 & 0.000004 & *** & NIMO_MLP > NIMO_T \\
+NN vs RF & 30 & 0.001472 & 0.756166 & ns & NN > RF \\
+\bottomrule
+\end{tabular}
+\end{table}

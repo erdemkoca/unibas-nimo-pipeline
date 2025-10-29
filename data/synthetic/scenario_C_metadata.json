@@ -1,0 +1,80 @@
+{
+  "scenario": "C",
+  "desc": "Scenario B: Main effect + strong x2*x3 interaction",
+  "p": 9,
+  "sigma": 0.1,
+  "b0": 0.5,
+  "beta_nonzero": {
+    "0": 0.25,
+    "1": 1.5,
+    "2": 1.5,
+    "3": -1.5,
+    "4": -2.0,
+    "5": 0.25
+  },
+  "nl": [
+    [
+      "main_int_linear",
+      1,
+      2,
+      0.0,
+      15.0
+    ],
+    [
+      "main_int_linear",
+      3,
+      4,
+      0.0,
+      15.0
+    ]
+  ],
+  "true_support": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "n_full": 10000,
+  "sizes": {
+    "test_big": 5000,
+    "pool": 5000
+  },
+  "task": "classification",
+  "class_dist_full": [
+    4961,
+    5039
+  ],
+  "nl_edges": [
+    {
+      "arity": 2,
+      "type": "main_int_linear",
+      "i": 1,
+      "j": 2,
+      "weight": 15.0,
+      "base": 0.0,
+      "scale": null
+    },
+    {
+      "arity": 2,
+      "type": "main_int_linear",
+      "i": 3,
+      "j": 4,
+      "weight": 15.0,
+      "base": 0.0,
+      "scale": null
+    }
+  ],
+  "beta_linearization": [
+    -0.07954664573400665,
+    1.2846153050962836,
+    1.2144800684395203,
+    -1.9643284240184093,
+    -1.872854554016822,
+    0.17728528236579785,
+    -0.042983381849605574,
+    -0.3275602445969927,
+    0.12775558227264933
+  ]
+}

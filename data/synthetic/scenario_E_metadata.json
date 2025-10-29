@@ -1,0 +1,68 @@
+{
+  "scenario": "E",
+  "desc": "Setting 5 (toy): n=10000, p=3 - Classification with tanh and sin interactions",
+  "p": 3,
+  "sigma": 0.1,
+  "b0": 0.0,
+  "beta_nonzero": {
+    "0": 3.0,
+    "1": -3.0
+  },
+  "nl": [
+    [
+      "main_int_tanh",
+      0,
+      1,
+      0.0,
+      3.0,
+      10.0
+    ],
+    [
+      "main_int_sin",
+      1,
+      0,
+      0.0,
+      -3.0,
+      -2.0
+    ]
+  ],
+  "true_support": [
+    0,
+    1
+  ],
+  "n_full": 10000,
+  "sizes": {
+    "test_big": 5000,
+    "pool": 5000
+  },
+  "task": "classification",
+  "class_dist_full": [
+    4015,
+    5985
+  ],
+  "nl_edges": [
+    {
+      "arity": 2,
+      "type": "main_int_tanh",
+      "i": 0,
+      "j": 1,
+      "weight": 3.0,
+      "base": 0.0,
+      "scale": 10.0
+    },
+    {
+      "arity": 2,
+      "type": "main_int_sin",
+      "i": 1,
+      "j": 0,
+      "weight": -3.0,
+      "base": 0.0,
+      "scale": -2.0
+    }
+  ],
+  "beta_linearization": [
+    3.007678404847052,
+    -2.958264223228259,
+    0.06749472186018163
+  ]
+}
