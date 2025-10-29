@@ -1,6 +1,6 @@
 # unibas-nimo-pipeline
 
-Reproducible pipeline from the University of Basel for benchmarking Neural-Interaction Models (NIMO) against strong baselines on synthetic and real tabular datasets. The project includes:
+Reproducible pipeline from the University of Basel for benchmarking NIMO(https://arxiv.org/abs/2506.05059) against strong baselines on synthetic and real tabular datasets. The project includes:
 
 - Synthetic scenario generator with ground-truth support and interaction metadata
 - Unified loaders and robust sampling/rebalancing utilities
